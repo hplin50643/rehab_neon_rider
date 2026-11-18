@@ -1,10 +1,10 @@
 # NEON REHAB RIDER｜星際單車
 
-**[立即遊玩：https://root50643.github.io/rehab_neon_rider/](https://root50643.github.io/rehab_neon_rider/)**
+**[立即遊玩：https://hplin50643.github.io/rehab_neon_rider/](https://hplin50643.github.io/rehab_neon_rider/)**
 
 開啟網站後可先按「模擬體驗」遊玩；實機連線請使用支援 Web Bluetooth 的 Chrome／Edge。
 
-踩進另一個宇宙。以飛輪 RPM 驅動第三人稱 3D 單車，從霓虹城市、軌道爬升到星際躍遷，完成五公里虛擬旅程。Web Bluetooth 直接連接 [Rehab ESP32 WebBLE](https://github.com/root50643/rehab_esp32_webble)，可依賽道坡度調整已校正的機台阻力。
+踩進另一個宇宙。以飛輪 RPM 驅動第三人稱 3D 單車，從霓虹城市、軌道爬升到星際躍遷，完成五公里虛擬旅程。Web Bluetooth 直接連接 [Rehab ESP32 WebBLE](https://github.com/hplin50643/rehab_esp32_webble)，可依賽道坡度調整已校正的機台阻力。
 
 這是獨立的靜態網站，不需伺服器、帳號或付費服務。原 ESP32 韌體及測試控制台不受影響。
 
@@ -87,14 +87,14 @@ pnpm test:browser
 
 ## GitHub Pages
 
-本專案的遊戲網址為 **https://root50643.github.io/rehab_neon_rider/**。`main` 更新後，Actions 會先檢查再部署。若要部署自己的 fork，請依下列步驟設定：
+本專案的遊戲網址為 **https://hplin50643.github.io/rehab_neon_rider/**。`main` 更新後，Actions 會先檢查再部署。若要部署自己的 fork，請依下列步驟設定：
 
 1. 在 GitHub 建立自己的 `rehab_neon_rider` repository，將本目錄的內容放在 repository 根目錄，推送到 `main`。
 2. Settings → Pages → Build and deployment → Source 選 **GitHub Actions**。
 3. `Deploy GitHub Pages` workflow 會安裝鎖定依賴、執行單元測試、型別檢查、建置與瀏覽器測試；全部成功後部署 `dist/`。
 4. 網址格式為 `https://<帳號>.github.io/<repository>/`。`base: './'` 搭配單頁、相對資源路徑，因此改 repository 名稱也不需改寫資源 URL。
 
-不需任何 API token 放進前端。部署 workflow 使用 GitHub 提供的 Pages 權限。公開程式庫為 [root50643/rehab_neon_rider](https://github.com/root50643/rehab_neon_rider)，檢查與部署結果可在 [GitHub Actions](https://github.com/root50643/rehab_neon_rider/actions) 查看。
+不需任何 API token 放進前端。部署 workflow 使用 GitHub 提供的 Pages 權限。公開程式庫為 [hplin50643/rehab_neon_rider](https://github.com/hplin50643/rehab_neon_rider)，檢查與部署結果可在 [GitHub Actions](https://github.com/hplin50643/rehab_neon_rider/actions) 查看。
 
 若手動上傳靜態主機，只上傳 `dist/` 的內容，保留 assets 子目錄；不要以 `file://` 直接開啟。
 
